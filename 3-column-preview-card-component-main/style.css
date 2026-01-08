@@ -16,6 +16,7 @@ body {
   font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
   font-size: 15px;
+  background-color: var(--gray100);
 }
 
 h1 {
@@ -65,6 +66,7 @@ h1 {
 
 .card-text p {
   color: var(--paragraphs);
+  line-height: 1.6;
 }
 
 .card-button {
@@ -73,9 +75,9 @@ h1 {
   margin-top: 56px;
 }
 .card-button button {
-  padding: 6px 12px;
+  padding: 12px 24px;
   border-radius: 20px;
-  width: 125px;
+  width: 145px;
   background-color: white;
   border: 0;
   cursor: pointer;
@@ -91,4 +93,25 @@ h1 {
 
 .luxury .card-button button {
   color: var(--primaryGreen900);
+}
+
+.sedans .card-button button:hover {
+  color: var(--gray100);
+  background-color: var(--primaryGold500);
+  border: 1px solid var(--gray100);
+}
+
+.suvs .card-button button:hover {
+  color: var(--gray100);
+  background-color: var(--primaryCyan800);
+  border: 1px solid var(--gray100);
+}
+
+.luxury .card-button button:hover {
+  color: var(--gray100);
+  background-color: var(--primaryGreen900);
+  border: 1px solid var(--gray100);
+}
+
+@media (width <= 600px) {
 }
